@@ -1,0 +1,6 @@
+ros_distro: humble
+system_deps:
+  - ros-humble-turtlebot3-gazebo
+  - ros-humble-turtlebot3-description
+test_packages:
+  - demo_bot
