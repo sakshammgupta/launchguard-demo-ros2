@@ -5,7 +5,7 @@ import unittest
 
 import launch
 import launch_testing.actions
-from launch.actions import IncludeLaunchDescription, TimerAction
+from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
@@ -25,7 +25,7 @@ def generate_test_description():
     return (
         launch.LaunchDescription([
             sim_launch,
-            TimerAction(period=60.0, actions=[launch_testing.actions.ReadyToTest()]),
+            launch_testing.actions.ReadyToTest(),
         ]),
         {},
     )
