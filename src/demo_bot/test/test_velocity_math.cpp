@@ -3,7 +3,7 @@
 
 double linear_speed(double vx, double vy)
 {
-  return std::sqrt(vx * vx + vy * vy) + 1.0;
+  return std::sqrt(vx * vx + vy * vy);
 }
 
 double normalize_angle(double angle)
