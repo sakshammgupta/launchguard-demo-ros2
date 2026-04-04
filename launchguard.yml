@@ -1,4 +1,5 @@
 ros_distro: humble
+sim_environment: gazebo
 system_deps:
   - ros-humble-turtlebot3-gazebo
   - ros-humble-turtlebot3-description
